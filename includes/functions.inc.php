@@ -33,9 +33,13 @@ $gradYear, $hsAddress, $hsCity, $hsState, $hsZip, $country2, $semester, $visit, 
     exit();
 }
 
-function generateData($conn){
-
-    $sql = "select fName, lName, visit, inter, clubs, tim from students";
+function generateData($conn, $email){
+    
+    
+    ##EDIT ME!!
+    $sql = "SELECT fName, lName, visit, inter, clubs, tim from students WHERE email='$email'";
+    ## EDIT ME!!
+    
     $result = mysqli_query($conn, $sql);
     
     $row = $result->fetch_assoc();

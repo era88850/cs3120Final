@@ -35,7 +35,7 @@ $gradYear, $hsAddress, $hsCity, $hsState, $hsZip, $country2, $semester, $visit, 
 
 function generateData($conn){
 
-    $sql = "select fName, lName, visit, inter, clubs, tim from students";
+    $sql = "SELECT fName, lName, visit, inter, clubs, tim FROM students ORDER BY id DESC";
     $result = mysqli_query($conn, $sql);
     
     $row = $result->fetch_assoc();

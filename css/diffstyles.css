@@ -24,20 +24,19 @@ select {
   #btnSubmit2{
     margin-left: 225px;
   }
-  .header{
-    text-align: center;
-  }
-  body{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.8029586834733894) 0%, rgba(214,1,1,0.819765406162465) 100%);
-    
-  }
- .text-center{
+.header{
+  text-align: center;
+}
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.8029586834733894) 0%, rgba(214,1,1,0.819765406162465) 100%);
+}
+.text-center{
    color:white;
- }
- .form-label{
+}
+.form-label{
    color:white;
- }
+}
  
 .form-control{
   color: white !important; 
@@ -62,6 +61,15 @@ select {
   opacity: 1;
 }
 #register{
+  text-align: center;
+  color: white;
+}
+.urWelcomeJake{
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+.submit-text{
   text-align: center;
   color: white;
 }

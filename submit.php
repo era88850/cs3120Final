@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+</head>
 <?php
 
 require_once 'includes/db.inc.php';
@@ -21,7 +22,7 @@ $interest = "";
 
 
 #Adds time slots to the array
-if ($data["tim"] == "12AM") {
+if ($data["tim"] == "12PM") {
     array_push($times, "12 PM - 1 PM");
     array_push($times, "1 PM - 2 PM");
     array_push($times, "2 PM - 3 PM");
@@ -77,37 +78,56 @@ if ($data["clubs"] == "StOrg") {
 
 ?> 
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Complete</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link href="http://localhost/CS3120Final/material-kit-master/assets/css/material-kit.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="css/diffstyles.css">
+    </head>
     <body>
 
-<!-- ems success message here here. you better include the crack parrot 0_0 -->
+        <!-- ems success message here here. you better include the crack parrot 0_0 -->
+        <div class="urWelcomeJake">
+            <img src="img/parrot.gif" height=75>
+        </div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-7 mx-auto d-flex justify-content-center flex-column">
+                    <h1 class="submit-text">Thank you for Registering!</h1>
+                    <p class="submit-text">
+                        Thank you for registering for a campus visit at the University of Central 
+                        Missouri. Below is your schedule. Please save it for reference on your visit!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        The php vars can be wrapped in normal html tags like so.
+        just be sure to keep the <?php echo $blah?> part.
+        I'll let you clean it up :)
+        -->
 
-Success!
+        <?php #var_dump($data)?>
 
-<img src="img/parrot.gif">
-
-<!-- 
-The php vars can be wrapped in normal html tags like so.
-just be sure to keep the <?php echo $blah?> part.
-I'll let you clean it up :)
--->
-
-<?php #var_dump($data)?>
-
-<h1> <?php echo $header?> </h2>
-<h3> <?php echo $date?> </h3>
+        <h2 class="submit-text"> <?php echo $header?> </h2>
+        <h3 class="submit-text"> <?php echo $date?> </h3>
 
 
-<h3> <?php echo $times[0]?> </h3>
-<h4> Todd Dining Hall tour & Lunch </h4>
+        <h4 class="submit-text"> <?php echo $times[0]?> </h4>
+        <h5 class="submit-text"> Todd Dining Hall tour & Lunch </h5>
 
-<h3> <?php echo $times[1]?> </h3>
-<h4> <?php echo $major?> Meeting </h4>
+        <h4 class="submit-text"> <?php echo $times[1]?> </h4>
+        <h5 class="submit-text"> <?php echo $major?> Meeting </h5>
 
-<h3> <?php echo $times[2]?> </h3>
-<h4> Dorm Room Tours </h4>
+        <h4 class="submit-text"> <?php echo $times[2]?> </h4>
+        <h5 class="submit-text"> Dorm Room Tours </h5>
 
-<h3> <?php echo $times[3]?> </h3>
-<h4> <?php echo $interest?> Meeting </h4>
+        <h4 class="submit-text"> <?php echo $times[3]?> </h4>
+        <h5 class="submit-text"> <?php echo $interest?> Meeting </h5>
 
     </body>
 </html>

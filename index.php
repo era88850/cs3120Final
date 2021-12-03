@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link href="http://localhost/Final_Website/material-kit-master/assets/css/material-kit.css" rel="stylesheet">
+        <link href="http://localhost/CS3120Final/material-kit-master/assets/css/material-kit.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
         <link rel="stylesheet" href="css/diffstyles.css">
     </head>
@@ -19,7 +19,7 @@
               <div class="row">
                 <div class="col-lg-7 mx-auto d-flex justify-content-center flex-column">
                   <h3 class="text-center">Student Contact Information</h3>
-                  <form role="form" id="contact-form" method="post" autocomplete="off" action="http://localhost/Final_Website/includes/process_form.php">
+                  <form role="form" id="contact-form" method="post" autocomplete="off" action="http://localhost/cs3120Final/includes/process_form.php">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-6">
